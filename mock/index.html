@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <title>landing</title>
+</head>
+<body>
+    <div class="main">
+    
+    <div class="vertical-menu">
+        <a href="#" class="active"><img class="logo" src="images/butterfly.png" alt=""></a>
+        <a href="#" class="active"><img src="images/search.png" alt=""></a>
+        <br>
+        <br>
+        <br>
+        <a href="#"><img src="images/home.png" alt=""></a>
+        <a href="#"><img src="images/app.png" alt=""></a>
+        <a href="#"><img src="images/person.png" alt=""></a>
+        <a href="#"><img src="images/menu.png" alt=""></a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="#"><img src="images/notification.png" alt=""></a>
+        <a href="#"><img src="images/move.png" alt=""></a>
+      </div>
+
+
+      <div style="width: 100%;">
+        
+        <div class="left ">
+            <img class="acountImage" src="images/account.png" alt="">
+           <div class="intro">    <h2 style="font-weight: bold;">Hi Mike,</h2>
+            <p>welcome back.</p>
+        </div>
+        
+            <h4>Today</h4>
+            <br>
+            <h2 style="font-weight: bold;">$19,892</h2>
+            <p>Account Balance</p>
+            <br>
+            <h4 style="font-weight: bold;">$4,000</h4>
+            <p>Year-to-Date Contributions</p>
+            <br>
+            <h4 style="font-weight: bold;">$1,892</h4>
+            <p>Total Interest</p>
+            <br>
+            <button class="btn1">I want to &darr;</button>
+            <br>
+            <br><br>
+            <br>
+            <h3 style="font-size: 20px;">Recent Transactions</h3>
+            <br>
+            <p>2020-08-07</p>
+            <h6>Withdrawal Transfer to Bank-XXX11</h6>
+           
+            <br><hr><br>
+            <p>2020-08-07</p>
+            <h6>Withdrawal Transfer to Bank-XXX11</h6>
+            <br><hr><br>
+            <p>2020-08-07</p>
+            <h6>Withdrawal Transfer to Bank-XXX11</h6>
+            <br><hr>
+
+
+        </div>
+        <div class="middle">
+            <h5>Retirement Income</h5>
+            <h4>Starting Year 2056</h4>
+            <br><br>
+            <div style="display: flex;
+            flex-direction: row;">
+                <div style="margin-right: 30px;">
+                    <h4>$300,000</h4>
+                    <p>My Goal</p>
+                    <hr>
+                </div>
+                <div  style="margin-right: 30px;">
+                    <h4>59%</h4>
+                    <p>
+                        Goal Achieved
+                    </p>
+                    <hr>
+                </div>
+                <div  style="margin-right: 30px;">
+                    <h4>$300</h4>
+                    <p>
+                        Est. Monthly Income
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <div>
+                <h5>Contributions Overtime</h5>
+            </div>
+            <div style="width: 500px;">
+                <canvas id="MyChart" width="200" height="100"></canvas>
+            </div>
+
+            <br><br>
+
+            
+           <div>
+            <h5>
+                How do I compare to my peers?
+            </h5>
+            <p>
+                These number represent current goal achievent
+            </p>
+           </div>
+           <div style="display: flex; flex-direction: row;">
+            <div >
+                <div > <h6>Age: <span>Under 30</span></h6></div>
+                <hr>
+                <div><h6>Salary: <span>K 20-K 30 </span></h6></div>
+                <hr>
+                <div><h6>Gender: <span> Male </span></h6></div>
+               
+                
+                
+            </div>
+
+            <div style="display: flex; flex-direction: row; ">
+                <canvas id="myChart1" style="width:100px;max-width:150px;"></canvas>
+                <p style="display: ;">Average <br>78%</p>
+            <canvas id="myChart2" style="width:100%;max-width:150px"></canvas>
+            <p>Top <br>95%</p>
+            <canvas id="myChart3" style="width:100%;max-width:150px"></canvas>
+            <p>Me <br>59%</p>
+            </div>
+           </div>
+        </div>
+        <div class="right">
+            <h4>Retirement Strategy</h4>
+            <br>
+            <div>
+                <h6>Employee Contribution</h6>
+                <input type="range" min="1" max="100" value="50">
+                <br>
+                <br>
+                <h6>Retirement Age</h6>
+                <input type="range" min="1" max="100" value="50">
+
+            </div>
+
+            <br><br>
+
+            <div>
+                <h6>Employer Contribution  <span> </span> 8.4%</h6>
+                <h6>Interest Rate  <span>  </span> 5%</h6>
+                <br>
+                <button class="update">Update</button>
+                <button class="view">View Help Docs ></button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+<script>new Chart(document.getElementById("MyChart"), {
+    type: 'bar',
+    data: {
+      labels: [20, 25, 30, 35, 40, 45, 50, 55, 60, 65],
+      datasets: [{
+        label: "Employer: k 73,500",
+        type: "bar",
+        stack: "Base",
+        backgroundColor: "#5579C6",
+        data: [5, 7, 7, 9, 11, 13, 15,16,17,18],
+      }, {
+        label: "Employer: k 52,500",
+        type: "bar",
+        stack: "Base",
+        backgroundColor: "#3A9BDC",
+        data: [10, 12, 15, 16, 19, 20, 21,22,23,24],
+      }, {
+        label: "Employer: k 244,313",
+        type: "bar",
+        stack: "Base",
+        backgroundColor: "#29C5F6",
+        data: [12, 15, 17, 18, 20, 22, 25,26,27,28],
+      
+      }, ]
+    },
+    options: {
+      scales: {
+        xAxes: [{
+          //stacked: true,
+          stacked: true,
+          ticks: {
+            beginAtZero: true,
+            maxRotation: 0,
+            minRotation: 0
+          }
+        }],
+        yAxes: [{
+          stacked: true,
+        }]
+      },
+    }
+  });
+
+
+  ///////////////////////    results charts
+  
+// var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValues = [78,22];
+var barColors = [
+  "#276221","#8bca84"
+  
+];
+
+new Chart("myChart1", {
+  type: "doughnut",
+  data: {
+  
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+     
+    }
+  }
+});
+
+
+
+var yValues = [95,5];
+var barColors = [
+  "#276221","#8bca84"
+  
+];
+
+new Chart("myChart2", {
+  type: "doughnut",
+  data: {
+  
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+     
+    }
+  }
+});
+
+
+
+var yValues = [59,41];
+var barColors = [
+  "#276221","#8bca84"
+  
+];
+
+new Chart("myChart3", {
+  type: "doughnut",
+  data: {
+  
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+     
+    }
+  }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.vertical-menu {
+   
+    width: 70px; 
+  }
+  
+  .vertical-menu a {
+    background-color: white; 
+    color: black; 
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; 
+  }
+  
+  .vertical-menu a.active {
+   
+    color: white;
+  }
+
+  .logo{
+    width: 50px;
+  }
+  .left{
+   display: inline-block;
+    margin-top: 70px;
+    margin-left: 70px;
+
+  }
+  .middle{
+    margin-left: 10px;
+    padding-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 70px;
+   
+
+  }
+  .right{
+    margin-left: 10px;
+ display: inline-block;
+ vertical-align: top;
+ margin-top: 70px;
+
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+  }
+  .acountImage{
+    width: 60px;
+    border-radius: 40px;
+    margin-left: 10px;
+    vertical-align: top;
+    margin-top: 10px;
+
+  }
+  .intro{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+  }
+  p{
+    color: rgb(122, 121, 121);
+  }
+  .btn1{
+    color: white;
+    background-color: blue;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+  }
+  body{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .update{
+    color: white;
+    background-color: blue;
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .view{
+    color: blue;
+    
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
